@@ -25,5 +25,5 @@
 
 如有问题或建议，请通过以下渠道联系：
 
-- 作者邮箱：zhukangwang1005@gmail.com
-- 项目主页：[GitHub - sduthesis](https://github.com/wangzhukang/sduthesis)
+- email：zhukangwang1005@gmail.com
+- issue/pr：[GitHub - sduthesis](https://github.com/wangzhukang/sduthesis) 
