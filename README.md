@@ -21,9 +21,13 @@
 
 详细使用方法、配置说明与示例，请参考 [PDF 版本说明文档](README.pdf)。
 
+## 模板在TexStudio中的使用
+
+（施工中）
+
 ## 联系方式
 
-如有问题或建议，请通过以下渠道联系：
+本仓库fork自[此处](https://github.com/wangzhukang/sduthesis)，如有问题或建议，建议通过以下渠道联系原作者：
 
 - email：zhukangwang1005@gmail.com
 - issue/pr：[GitHub - sduthesis](https://github.com/wangzhukang/sduthesis) 
