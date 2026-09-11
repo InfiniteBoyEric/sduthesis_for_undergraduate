@@ -44,6 +44,29 @@
 
 ![Step3](https://raw.githubusercontent.com/InfiniteBoyEric/sduthesis_for_undergraduate/main/img_for_README/step3.png)
 
+### Step 4: 添加用户命令
+
+在“用户命令”处点击“+ 添加”，首先对命令进行命名，然后可在右侧输入框中直接输入`txs:///xelatex | txs:///biber | txs:///xelatex | txs:///xelatex | txs:///view-pdf-internal`，点击“确认”，直接跳转至Step 7；或也可以看到最右侧有一个齿轮图标的设置按钮，如下图所示
+
+![Step4](https://raw.githubusercontent.com/InfiniteBoyEric/sduthesis_for_undergraduate/main/img_for_README/step4.png)
+
+### Step 5: 添加构建命令
+点击Step 4中看到的齿轮图标设置按钮，在弹出的窗口中，先点击左侧要添加的命令，然后点击中间的“添加”按钮，就可以将命令添加至右侧“选定的命令列表”了；依此添加`XeLaTex`-`Biber`-`XeLaTex`-`XeLaTex`-`内置 PDF 查看器`（注意顺序不能错，错了也可通过右侧下方的“向上”“向下”按钮调整；每一步命令具体在做什么建议询问AI），如下图所示
+
+![Step5](https://raw.githubusercontent.com/InfiniteBoyEric/sduthesis_for_undergraduate/main/img_for_README/step5.png)
+
+### Step 6: 完成命令构建
+
+完成构建后右侧从上至下的顺序应当与下图一致，点击“确认”，再点击“确认”完成所有设置
+
+![Step6](https://raw.githubusercontent.com/InfiniteBoyEric/sduthesis_for_undergraduate/main/img_for_README/step6.png)
+
+### Step 7: 使用用户命令编译
+
+在TeXstudio上方工具栏的“工具”选项下，可以看到“用户”一栏，其下就有刚刚命名好的用户命令，直接点击即可开始编译，或者后续直接使用其后提示的快捷键（比如我这里是 `Alt + Shift + F1`）启动编译，如下图所示
+
+![Step7](https://raw.githubusercontent.com/InfiniteBoyEric/sduthesis_for_undergraduate/main/img_for_README/step7.png)
+
 ## 其他补充
 
 （施工中）
