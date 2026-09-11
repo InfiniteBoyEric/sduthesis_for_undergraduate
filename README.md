@@ -16,12 +16,35 @@
 
 - **编译方式**：对主源文件 `main.tex` 按照 `xelatex->biber->xelatex->xelatex` 的顺序编译得到输出 PDF 文档 `main.pdf` 。
 - **使用平台**：
-  - （推荐）在中文 Windows 操作系统与较新的 TeXLive 本地发行版环境下，在 Visual Studio Code 中搭配 LaTeX Workshop 扩展使用。`.vscode/settings.json` 中提供了可能会优化使用体验的 Visual Studio Code 局部设置。
+  - 在中文 Windows 操作系统与较新的 TeXLive 本地发行版环境下，在 Visual Studio Code 中搭配 LaTeX Workshop 扩展使用。`.vscode/settings.json` 中提供了可能会优化使用体验的 Visual Studio Code 局部设置。
   - 在 Overleaf 平台上使用，编译器设置为 `xelatex` ，主文档设置为 `main.tex` ，TeXLive 版本选择较新版即可。注：在 Overleaf 平台上使用时，可能会产生 `fontspec` 宏包的 `Script` 警告，该警告不会对文档的编译造成影响，忽略即可。
+  - 在 Windows 操作系统与 TeXstudio （版本4.8.1）中使用，直接用TeXstudio打开main.tex即可，编译配置方法见下方“模板在TexStudio中的使用”部分。
 
 详细使用方法、配置说明与示例，请参考 [PDF 版本说明文档](README.pdf)。
 
-## 模板在TexStudio中的使用
+## 模板在TeXstudio中的编译
+
+本人使用该仓库生成论文时使用的是TeXstudio 4.8.1，稍微探索了一下，将编译论文的方法整理如下：
+
+### Step 1: 打开“选项”
+
+点击TeXstudio上方工具栏的“选项”按钮，如下图所示
+
+![Step1](https://raw.githubusercontent.com/InfiniteBoyEric/sduthesis_for_undergraduate/main/img_for_README/step1.png)
+
+### Step 2: 打开“设置”
+
+点击“设置 TeXstudio”，如下图所示
+
+![Step2](https://raw.githubusercontent.com/InfiniteBoyEric/sduthesis_for_undergraduate/main/img_for_README/step2.png)
+
+### Step 3: 打开“构建”
+
+在弹出的“设置 TeXstudio”窗口中点击“构建”，如下图所示
+
+![Step3](https://raw.githubusercontent.com/InfiniteBoyEric/sduthesis_for_undergraduate/main/img_for_README/step3.png)
+
+## 其他补充
 
 （施工中）
 
