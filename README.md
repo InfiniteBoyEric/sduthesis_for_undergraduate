@@ -73,19 +73,14 @@
 
 在最终提交的论文至系统时，直接编译生成的这篇论文格式还需要做如下调整：
 
-1. 目录颜色（蓝色->黑色）：
-2. 公式、表格、图片编号的颜色（蓝色->黑色)：
-3. 参考文献上角标颜色（红色->黑色）：
-4. 参考文献作者名规范（应当调整为姓在前、名在后）:./config/main/config-main.tex中有字段`\usepackage[
-    backend=biber,
-    style=gb7714-2015,
-    gbnamefmt=givenahead,
-    gbpunctin=false
-]{biblatex}`，其中`gbnamefmt`可取的值有`uppercase`（默认值，姓名所有字母大写）、`lowercase`（不对姓名大小写做处理，保持 `.bib` 文件中的原始输入）、`givenahead`（名在前、姓在后）、`familyahead`（姓在前、名在后）等，因此姓前名后可以直接改为`gbnamefmt=familyahead`
+1. 目录交叉引用的颜色（蓝色->黑色）：`./config/main/config-main.tex`中有字段`\hypersetup{ colorlinks=true, linkcolor=blue, urlcolor=linkdarkblue, citecolor=red, }`，改为`\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black, }`
+2. 公式、表格、图片编号交叉引用的颜色（蓝色->黑色)：同上
+3. 参考文献上角标交叉引用的颜色（红色->黑色）：同上
+4. 参考文献作者名规范（应当调整为姓在前、名在后）:`./config/main/config-main.tex`中有字段`\usepackage[backend=biber, style=gb7714-2015, gbnamefmt=givenahead, gbpunctin=false]{biblatex}`，其中`gbnamefmt`可取的值有`uppercase`（默认值，姓名所有字母大写）、`lowercase`（不对姓名大小写做处理，保持 `.bib` 文件中的原始输入）、`givenahead`（名在前、姓在后）、`familyahead`（姓在前、名在后）等，因此姓前名后可以将`gbnamefmt=givenahead`直接改为`gbnamefmt=familyahead`
 
 ### 细节提醒
 
-1. 会议论文集在一些论文网站的Cite生成的.bib文件或BibTex中易缺失会议地点/出版商，须自行补充
+1. 会议论文集在一些论文网站的Cite生成的`.bib`文件或BibTex中易缺失会议地点/出版商，须自行补充
 2. 所有英文文献应当统一格式：英文题目要么只有第一个单词首字母大写，要么每个单词首字母大写（介词preposition、连词conjunction、副词adverb应小写）；英文期刊/会议名每个单词首字母大写
 
 ## 联系方式
