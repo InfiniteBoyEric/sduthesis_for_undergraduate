@@ -22,9 +22,9 @@
 
 详细使用方法、配置说明与示例，请参考 [PDF 版本说明文档](README.pdf)。
 
-## 模板在TeXstudio中的编译
+## 模板在TeXstudio中的编译与使用
 
-本人使用该仓库生成论文时使用的是TeXstudio 4.8.1，稍微探索了一下，将编译论文的方法整理如下：
+本人使用该仓库编译论文时使用的是TeXstudio 4.8.1，稍微探索了一下，将在TeXstudio编译论文的方法整理如下：
 
 ### Step 1: 打开“选项”
 
@@ -71,12 +71,17 @@
 
 ### 关于格式
 
-在最终提交的论文至系统时，直接编译生成的这篇论文格式还是需要做如下调整：
+在最终提交的论文至系统时，直接编译生成的这篇论文格式还需要做如下调整：
 
 1. 目录颜色（蓝色->黑色）：
 2. 公式、表格、图片编号的颜色（蓝色->黑色)：
 3. 参考文献上角标颜色（红色->黑色）：
-4. 参考文献作者名规范（应当调整为姓在前、名在后）:
+4. 参考文献作者名规范（应当调整为姓在前、名在后）:./config/main/config-main.tex中有字段`\usepackage[
+    backend=biber,
+    style=gb7714-2015,
+    gbnamefmt=givenahead,
+    gbpunctin=false
+]{biblatex}`，其中`gbnamefmt`可取的值有`uppercase`（默认值，姓名所有字母大写）、`lowercase`（不对姓名大小写做处理，保持 `.bib` 文件中的原始输入）、`givenahead`（名在前、姓在后）、`familyahead`（姓在前、名在后）等，因此姓前名后可以直接改为`gbnamefmt=familyahead`
 
 ### 细节提醒
 
